@@ -1,0 +1,9 @@
+{
+    "title": "YOUR_DATASET_NAME",
+    "id": "YOUR_KAGGLE_USERNAME/YOUR_DATASET_NAME",
+    "licenses": [
+        {
+            "name": "CC0-1.0"
+        }
+    ]
+}
