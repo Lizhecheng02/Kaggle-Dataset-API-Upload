@@ -63,7 +63,7 @@ kaggle datasets version -p ./dataset -m "update message"
 
 #### 5. Automated Upload Script
 
-Run the following command and input your information into the code after completing **Step 3**.
+Run the following command and input your information into the code after completing **Step 2**.
 
 ```bash
 python script.py
