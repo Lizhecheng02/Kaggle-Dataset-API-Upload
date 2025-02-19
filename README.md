@@ -47,6 +47,10 @@ An example of a `dataset-metadata.json` file can be found in this GitHub reposit
 
 #### 4. Upload Data to Kaggle
 
+Here are two different scenarios:
+
+- If there are no subfolders under ``./dataset``.
+
 Run the following command to upload the dataset to Kaggle:
 
 ```bash
@@ -59,6 +63,20 @@ To update an existing dataset, use the following command:
 
 ```bash
 kaggle datasets version -p ./dataset -m "update message"
+```
+
+- If there are subfolders under ``./dataset``.
+
+Run the following command to upload the dataset to Kaggle:
+
+```bash
+kaggle datasets create -p ./dataset --dir-mode zip
+```
+
+To update an existing dataset, use the following command:
+
+```bash
+kaggle datasets version -p ./dataset --dir-mode zip -m "update message"
 ```
 
 #### 5. Automated Upload Script
