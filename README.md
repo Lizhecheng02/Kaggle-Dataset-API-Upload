@@ -1,6 +1,6 @@
-### Step-by-Step Guide: Uploading Your Dataset to Kaggle Using the API
+## Step-by-Step Guide: Uploading Your Dataset to Kaggle Using the API
 
-#### 1. Set Up Kaggle API Key
+### 1. Set Up Kaggle API Key
 
 - Log in to Kaggle.
 - Your username is the name displayed in your Kaggle profile link, e.g., `https://www.kaggle.com/xxx`.
@@ -8,7 +8,7 @@
 - Scroll down to find the API section and click "Create New API Token".
 - The downloaded `kaggle.json` file contains your API key.
 
-#### 2. Install and Configure the Kaggle CLI
+### 2. Install and Configure the Kaggle CLI
 
 - Install the `kaggle` Python package on your server:
 
@@ -39,7 +39,7 @@ export KAGGLE_USERNAME="YOUR_KAGGLE_USERNAME"
 export KAGGLE_KEY="YOUR_KAGGLE_API_KEY"
 ```
 
-#### 3. Prepare Data for Upload
+### 3. Prepare Data for Upload
 
 Organize the data you want to upload into a folder. The dataset folder must contain at least the following:
 
@@ -54,7 +54,7 @@ An example of a `dataset-metadata.json` file can be found in this GitHub reposit
 - ``id``: Path to your dataset, in the format `username/dataset-name`.
 - ``licenses``: License type.
 
-#### 4. Upload Data to Kaggle
+### 4. Upload Data to Kaggle
 
 Here are two different scenarios:
 
@@ -88,7 +88,7 @@ To update an existing dataset, use the following command:
 kaggle datasets version -p ./dataset --dir-mode zip -m "update message"
 ```
 
-#### 5. Automated Upload Script
+### 5. Automated Upload Script
 
 Run the following command and input your information into the code after completing **Step 2**.
 
@@ -96,11 +96,11 @@ Run the following command and input your information into the code after complet
 python script.py
 ```
 
-#### 6. Check Dataset
+### 6. Check Dataset
 
 You will receive a link to your dataset, which will default to **private** when opened (ensuring your data remains secure).
 
-#### Questions
+### Questions
 
 You are welcome to discuss any issues you encounter while running this GitHub repository.
 
