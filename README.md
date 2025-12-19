@@ -18,16 +18,25 @@ pip install kaggle
 
 - Verify the installation:
 
-```bas
+```bash
 kaggle --version
 ```
 
 - Set up the `kaggle.json` file for use:
 
-```bas
+```bash
 mkdir -p ~/.kaggle
 mv ./kaggle.json ~/.kaggle/kaggle.json
 chmod 600 ~/.kaggle/kaggle.json
+```
+
+**Alternatively, you can directly enter the following commands in the terminal:**
+
+- Use the ``export`` method:
+
+```bash
+export KAGGLE_USERNAME="YOUR_KAGGLE_USERNAME"
+export KAGGLE_KEY="YOUR_KAGGLE_API_KEY"
 ```
 
 #### 3. Prepare Data for Upload
