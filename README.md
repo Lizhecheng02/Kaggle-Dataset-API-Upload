@@ -100,6 +100,19 @@ python script.py
 
 You will receive a link to your dataset, which will default to **private** when opened (ensuring your data remains secure).
 
+### 7. Download Dataset
+
+Your dataset link will look like this: ``https://www.kaggle.com/datasets/[YOUR_USERNAME]/[YOUR_DATASET_NAME]``
+
+You can download the dataset using the following commands:
+
+```bash
+export KAGGLE_USERNAME="YOUR_KAGGLE_USERNAME"
+export KAGGLE_KEY="YOUR_KAGGLE_API_KEY"
+kaggle datasets download -d [YOUR_USERNAME]/[YOUR_DATASET_NAME]
+unzip [YOUR_DATASET_NAME].zip
+```
+
 ### Questions
 
 You are welcome to discuss any issues you encounter while running this GitHub repository.
